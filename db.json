@@ -1,0 +1,39 @@
+{
+  "customers": [
+    {
+      "name": "John Doe",
+      "phone": "910928392098",
+      "address": "123 Sun Street",
+      "membership": "Platinum",
+      "id": "1"
+    },
+    {
+      "name": "Mary Johnson",
+      "phone": "808937482734",
+      "address": "893 Main Voulevard",
+      "membership": "Pro",
+      "id": "2"
+    },
+    {
+      "id": "7d6f",
+      "name": "ahmad",
+      "phone": "78966666",
+      "address": "salfeett",
+      "membership": "Pro"
+    },
+    {
+      "id": "4266",
+      "name": "tolen",
+      "phone": "4355654656",
+      "address": "ram",
+      "membership": "Pro"
+    },
+    {
+      "id": "19d0",
+      "name": "huu",
+      "phone": "",
+      "address": "",
+      "membership": ""
+    }
+  ]
+}
