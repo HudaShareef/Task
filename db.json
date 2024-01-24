@@ -1,39 +1,88 @@
 {
-  "customers": [
+  "products": [
     {
-      "name": "John Doe",
-      "phone": "910928392098",
-      "address": "123 Sun Street",
-      "membership": "Platinum",
-      "id": "1"
+      "id": "1",
+      "name": "Google Pixel 6 Pro",
+      "color": "Cloudy White",
+      "price": "389.99",
+      "capacity": "128 GB"
     },
     {
-      "name": "Mary Johnson",
-      "phone": "808937482734",
-      "address": "893 Main Voulevard",
-      "membership": "Pro",
-      "id": "2"
+      "id": "2",
+      "name": "Apple iPhone 12 Mini",
+      "color": "Cloudy White",
+      "price": "1000",
+      "capacity": "128 GB"
     },
     {
-      "id": "7d6f",
-      "name": "ahmad",
-      "phone": "78966666",
-      "address": "salfeett",
-      "membership": "Pro"
+      "id": "3",
+      "name": "Apple iPhone 12 Pro",
+      "color": "Cloudy White",
+      "price": "1050",
+      "capacity": "512 GB"
     },
     {
-      "id": "4266",
-      "name": "tolen",
-      "phone": "4355654656",
-      "address": "ram",
-      "membership": "Pro"
+      "id": "4",
+      "name": "Apple iPhone 11",
+      "color": "Purple",
+      "price": "1050",
+      "capacity": "512 GB"
     },
     {
-      "id": "19d0",
-      "name": "huu",
-      "phone": "",
-      "address": "",
-      "membership": ""
+      "id": "5",
+      "name": "Samsung Galaxy Z",
+      "color": "Brown",
+      "price": "689.99",
+      "capacity": "512 GB"
+    },
+    {
+      "id": "6",
+      "name": "Apple AirPods",
+      "color": "Brown",
+      "price": "120",
+      "capacity": "512 GB"
+    },
+    {
+      "id": "7",
+      "name": "Apple MacBook Pro 16",
+      "color": "Brown",
+      "price": "1849.99",
+      "capacity": "512 GB"
+    },
+    {
+      "id": "8",
+      "name": "Apple Watch Series 8",
+      "color": "Red",
+      "price": "1500",
+      "capacity": "64 GB"
+    },
+    {
+      "id": "9",
+      "name": "Beats Studio3 Wireless",
+      "color": "Red",
+      "price": "500",
+      "capacity": "64 GB"
+    },
+    {
+      "id": "10",
+      "name": "Apple iPad Mini ",
+      "color": "white",
+      "price": "700",
+      "capacity": "64 GB"
+    },
+    {
+      "id": "11",
+      "name": "Apple Watch Series 8",
+      "color": "white",
+      "price": "700",
+      "capacity": "254 GB"
+    },
+    {
+      "id": "12",
+      "name": "Apple iPad Air",
+      "color": "Brown",
+      "price": "120",
+      "capacity": "512 GB"
     }
   ]
 }

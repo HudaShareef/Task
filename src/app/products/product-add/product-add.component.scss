@@ -1,0 +1,47 @@
+h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family:sans-serif;
+  }
+  
+  .form-container {
+    width: 800px; 
+    margin: 0 auto;
+    height: 170px; 
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .Add-Product-btn{
+    margin-right: 10px;
+    background-color:rgb(56, 211, 159);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 60%);
+    margin-top: 15px;
+    margin-left: 260px;
+  }
+  
+  .Cancel-btn {
+    background-color: #6c757d; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius:5px;
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 60%);  
+    margin-top: 16px;
+}
+  
+
+.form-control{
+    border-radius: 3px;
+
+}

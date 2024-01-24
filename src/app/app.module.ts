@@ -12,7 +12,7 @@ import {
   RouterStateSerializer
 } from "@ngrx/router-store";
 
-import { CustomSerializer } from "./shared/utils";
+import { CustomSerializer } from "./_utils/utils";
 
 import { AppRoutingModule } from "./app-routing.module";
 
@@ -20,7 +20,8 @@ import { AppComponent } from "./app.component";
 import { LoginComponent } from "./login/login.component";
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent,
+  ],
   imports: [
     BrowserModule,
     StoreModule.forRoot({

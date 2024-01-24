@@ -1,0 +1,32 @@
+<div class="form-container">
+
+  <h3>Add Product</h3>
+
+  <form class="form-inline mb-4">
+    <form [formGroup]="productForm" (submit)="createProduct()"   class="form-inline mb-4">
+      <label class="sr-only" for="Name">Name</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <input type="text" class="form-control" formControlName="name" placeholder="name">
+      </div>
+
+      <label class="sr-only" for="color">Color</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <input type="text" class="form-control" formControlName="color" placeholder="color">
+      </div>
+
+      <label class="sr-only" for="price">Price</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <input type="text" class="form-control" formControlName="price" placeholder="price">
+      </div>
+
+      <label class="sr-only" for="capacity">Capacity</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <input type="text" class="form-control" formControlName="capacity" placeholder="capacity">
+      </div>
+      <button type="submit" class="Add-Product-btn">Add Product</button>
+      <button type="button" class="Cancel-btn" (click)="onCancel()">Cancel</button>
+
+
+    </form>
+  </form>
+</div>

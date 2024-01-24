@@ -5,13 +5,13 @@ import { RouterModule, Routes } from "@angular/router";
 import { LoginComponent } from "./login/login.component";
 
 const appRoutes: Routes = [
-  { path: "", component: LoginComponent },
+  { path: "", redirectTo: "/login", pathMatch: "full" }, 
+  { path: "login", component: LoginComponent },
   {
-    path: "customers",
-    loadChildren: () => import("../app/customers/customers.module").then(m => m.CustomersModule)
-  }
+    path: "login/products",
+    loadChildren: () => import("./products/products.module").then(m => m.ProductsModule)
+  },
 ];
-
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(appRoutes)],
   exports: [RouterModule],

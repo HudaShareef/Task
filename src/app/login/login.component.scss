@@ -1,10 +1,8 @@
 .login-container {
-    max-width: 300px;
+    width: 377px;
     margin: auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 130px;
   }
   
   .form-group {
@@ -15,24 +13,108 @@
     display: block;
     margin-bottom: 5px;
   }
-  
   input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none; 
   }
   
-  button {
-    background-color: #4caf50;
+  input:focus {
+	border-bottom: 1px solid rgb(49, 185, 139);
+  }
+  
+  .btn {
+    background-color:rgb(56, 211, 159);
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
+    width: 100%;
+	  margin-top: 40px;
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #45a049;
+  .btn:hover {
+    background-color:rgb(49, 185, 139);
   }
   
+
+.login-page{
+  background-color:rgb(248, 250, 251);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family:sans-serif;
+}
+ 
+.right-aligned {
+  max-width: 770px;
+  margin-right: 50px;
+}
+ 
+
+p {
+    padding-top: 7px;
+	font-size: 14px;
+	color: #666;
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	margin-right: 255px;
+}
+
+.social-media img {
+ 	width: 40px;
+	height: 40px;
+	margin: 2px;
+}
+
+.forgot-password {
+	color: rgb(136, 136, 136);
+	text-decoration:underline;
+	padding-bottom: 10px;
+	margin-left: 221px;
+ 
+  }
+   
+  .forgot-password:hover {
+    color:rgb(0, 0, 0);
+  }
+  .forgot-password-div{
+	margin-top: -25px;
+  }
+  .remember-checkbox{
+    margin-left: -159px;
+	position: relative;
+  }
+  .Remember-me-lable{
+	position: relative;
+
+    margin-left: 22px;
+	margin-top:-26px;
+	width: 120px;
+	color: rgb(136, 136, 136);
+    font-size: 14px;
+  }
+  .welcome-message {
+	font-size: 12px;
+	margin-top: -17px;
+	color: #666;
+	padding-bottom: 15px;
+  }
+  
+  h2{
+	padding-bottom: 22px;
+  }
+  h2 strong {
+	font-weight: bold;
+  }
+  
+
