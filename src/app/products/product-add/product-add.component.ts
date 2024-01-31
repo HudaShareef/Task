@@ -25,21 +25,30 @@ export class ProductAddComponent implements OnInit {
   ngOnInit() {
     this.productForm = this.fb.group({
       name: ["", Validators.required],
-      color: ["", Validators.required],
+      year: ["", Validators.required],
       price: ["", Validators.required],
-      capacity: ["", Validators.required]
+      cpuModel: ["", Validators.required],
+      hardDiskSize: ["", Validators.required]
     });
   }
 
   createProduct() {
+    if (this.productForm.invalid) {
+      return;
+    }
+
     const newProduct: Product = {
       name: this.productForm.get("name")?.value || '',
-      color: this.productForm.get("color")?.value || '',
-      price: this.productForm.get("price")?.value || '',
-      capacity: this.productForm.get("capacity")?.value || '',
+      data: {
+        year: this.productForm.get("year")?.value || 0,
+        price: this.productForm.get("price")?.value || 0,
+        CPUmodel: this.productForm.get("cpuModel")?.value || '',
+        HardDiskSize: this.productForm.get("hardDiskSize")?.value || ''
+      }
     };
 
     this.store.dispatch(new productActions.CreateProduct(newProduct));
+    console.log(newProduct);
 
     this.productForm.reset();
   }

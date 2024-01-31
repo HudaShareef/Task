@@ -1,5 +1,10 @@
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; 
-}
+
+
+tr.heafOfTable {
+    background-color: rgb(63, 61, 86);
+    color: white;
+  }
+
+  tr.heafOfTable th {
+    border-radius: 3px; 
+  }

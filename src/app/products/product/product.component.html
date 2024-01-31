@@ -1,20 +1,27 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <div class="navbar">
-  <a class="LogOut" [routerLink]="['/login']" role="button"><i class="material-icons logout-icon">logout</i>Logout</a>
+  <a class="LogOut" (click)="logout()" role="button"><i class="material-icons logout-icon">logout</i>Logout</a>
 </div>
+
 <div class="Products-h3">
   <i class="material-icons">shopping_cart</i> 
   <h3>Products</h3>
 </div>
-<div class="container">
-  <div class="content">
-    <app-product-list></app-product-list>
+
+<div>
+ 
     <div class="overlay" *ngIf="isFormOpen"></div>
 
-    <button class="Add-new-Product-btn" (click)="toggleForm()">Click Here to Add new Product</button>
+    <div class="button-container"> 
+      <button class="Add-new-Product-btn" (click)="toggleForm()">Click Here to Add new Product</button>
+    </div>
+
     <div class="modal-container" *ngIf="isFormOpen">
       <app-customer-add (cancel)="toggleForm()"></app-customer-add>
     </div>
-  </div>
+
+    <app-product-list></app-product-list>
+ 
 </div>
+

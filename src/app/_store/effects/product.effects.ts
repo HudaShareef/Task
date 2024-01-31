@@ -22,7 +22,7 @@ export class ProductEffect {
     ofType<productActions.LoadProducts>(
       productActions.ProductActionTypes.LOAD_PRODUCTS
     ),
-    mergeMap((action: productActions.LoadProducts) =>
+    mergeMap(() =>
       this.productService.getProducts().pipe(
         map(
           (products: Product[]) =>
@@ -51,6 +51,5 @@ export class ProductEffect {
     )
    )
   );
-
 
 }

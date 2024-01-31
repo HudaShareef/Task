@@ -12,7 +12,7 @@ import { ProductEffect } from "../_store/effects/product.effects";
 import { ProductComponent } from "./product/product.component";
 import { ProductAddComponent } from "./product-add/product-add.component";
  import { ProductListComponent } from "./product-list/product-list.component";
-import { ProductCardComponent } from './product-card/product-card.component';
+ import { NgxPaginationModule } from 'ngx-pagination';
 
 const productRoutes: Routes = [{ path: "", component: ProductComponent }];
 
@@ -23,13 +23,14 @@ const productRoutes: Routes = [{ path: "", component: ProductComponent }];
     FormsModule,
     RouterModule.forChild(productRoutes),
     StoreModule.forFeature("products", productReducer),
-    EffectsModule.forFeature([ProductEffect])
+    EffectsModule.forFeature([ProductEffect]),
+    NgxPaginationModule,
+
   ],
   declarations: [
     ProductComponent,
     ProductAddComponent,
     ProductListComponent,
-    ProductCardComponent
   ]
 })
 export class ProductsModule {}

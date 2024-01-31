@@ -45,3 +45,54 @@ h3 {
     border-radius: 3px;
 
 }
+
+
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  .form-container {
+    width: 300px;
+    margin: 0 auto;
+    height: 320px;
+  }
+     .input-group{
+      width: 239px;
+
+     }
+     .Add-Product-btn{
+      margin-right: 10px;
+      width: 150px;
+       margin-left: 9px;
+    }
+    
+
+  }
+  
+  /* Mobile */
+@media (max-width: 350px) {
+
+  .form-container {
+    width: 200px;
+    margin: 0 auto;
+    height: 320px;
+  }
+     .input-group{
+      width: 180px;
+
+     }
+     .Add-Product-btn{
+      margin-right: 10px;
+      width: 120px;
+      height: 44px;
+      margin-left: -11px;
+    }
+    .Cancel-btn {
+      height: 44px;
+      width: 77px;
+      
+  }
+
+  }
+  

@@ -1,7 +1,13 @@
 export interface Product  {
     id?: number;
     name: string;
-    color: string;
-    price: string;
-    capacity: string;
+    data: ProductData;
   }
+
+  
+export interface ProductData {
+  year: number;
+  price: number;
+  CPUmodel: string;
+  HardDiskSize: string;
+}

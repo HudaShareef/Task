@@ -3,14 +3,13 @@ import { CommonModule } from "@angular/common";
 import { RouterModule, Routes } from "@angular/router";
 
 import { LoginComponent } from "./login/login.component";
+import { AuthGuard } from "./_authentication/auth.guard";
 
 const appRoutes: Routes = [
-  { path: "", redirectTo: "/login", pathMatch: "full" }, 
-  { path: "login", component: LoginComponent },
-  {
-    path: "login/products",
-    loadChildren: () => import("./products/products.module").then(m => m.ProductsModule)
-  },
+  { path: 'products', loadChildren: () => import("./products/products.module").then(m => m.ProductsModule), canActivate: [AuthGuard] },
+  { path: 'login', component: LoginComponent },
+  { path: "", redirectTo: "/products", pathMatch: "full" }, 
+  { path: "**", redirectTo: "/products" }
 ];
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(appRoutes)],

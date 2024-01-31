@@ -4,24 +4,29 @@
 
   <form class="form-inline mb-4">
     <form [formGroup]="productForm" (submit)="createProduct()"   class="form-inline mb-4">
+
       <label class="sr-only" for="Name">Name</label>
       <div class="input-group mb-2 mr-sm-2">
         <input type="text" class="form-control" formControlName="name" placeholder="name">
       </div>
-
-      <label class="sr-only" for="color">Color</label>
+      <label class="sr-only" for="year">Year</label>
       <div class="input-group mb-2 mr-sm-2">
-        <input type="text" class="form-control" formControlName="color" placeholder="color">
+        <input type="number" class="form-control" formControlName="year" placeholder="Year" required>
       </div>
 
       <label class="sr-only" for="price">Price</label>
       <div class="input-group mb-2 mr-sm-2">
-        <input type="text" class="form-control" formControlName="price" placeholder="price">
+        <input type="number" class="form-control" formControlName="price" placeholder="Price" required>
       </div>
 
-      <label class="sr-only" for="capacity">Capacity</label>
+      <label class="sr-only" for="cpuModel">CPU Model</label>
       <div class="input-group mb-2 mr-sm-2">
-        <input type="text" class="form-control" formControlName="capacity" placeholder="capacity">
+        <input type="text" class="form-control" formControlName="cpuModel" placeholder="CPU Model" required>
+      </div>
+
+      <label class="sr-only" for="hardDiskSize">Hard Disk Size</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <input type="text" class="form-control" formControlName="hardDiskSize" placeholder="Hard Disk Size" required>
       </div>
       <button type="submit" class="Add-Product-btn">Add Product</button>
       <button type="button" class="Cancel-btn" (click)="onCancel()">Cancel</button>

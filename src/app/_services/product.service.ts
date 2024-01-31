@@ -9,7 +9,7 @@ import { Product } from "../_models/product.model";
   providedIn: "root"
 })
 export class ProductService {
-  private productsUrl = "http://localhost:3000/products";
+  private productsUrl = "https://api.restful-api.dev/objects";
 
   constructor(private http: HttpClient) {}
 
